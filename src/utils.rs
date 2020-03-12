@@ -1,3 +1,11 @@
 pub fn string_replace(origin: &str, replace_by: &str, times: usize, content: String) -> String {
-    return content.replacen(origin, replace_by, times)
+    return content.replacen(origin, replace_by, times);
+}
+
+pub fn uppercase_first_letter(s: &str) -> String {
+    let mut c = s.chars();
+    match c.next() {
+        None => String::new(),
+        Some(f) => f.to_uppercase().collect::<String>() + c.as_str(),
+    }
 }
