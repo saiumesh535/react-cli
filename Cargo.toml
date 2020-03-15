@@ -1,5 +1,5 @@
 [package]
-name = "component-cli"
+name = "react-cli"
 version = "0.1.0"
 authors = ["saiumesh535 <d.sai535@gmail.com>"]
 edition = "2018"
